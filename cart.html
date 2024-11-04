@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giỏ Hàng</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/cart.css">
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <ul>
+          <li><a class="dang-nhap" href="#">Đăng nhập</a></li>
+          <li><a class="dang-ky" href="./sign-up.html">Đăng ký</a></li>
+        </ul>
+      </div>
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <a href="#">
+            <img src="assets/images/logoct.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="inner-menu">
+          <ul>
+            <li><a href="./home-page.html">TRANG CHỦ</a></li>
+            <li><a href="#">SẢN PHẨM</a></li>
+            <li><a href="#">DỊCH VỤ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+        <div class="inner-cart">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </header>
+    <!--End Header -->
+
+    <div class="cart-container">
+        <div class="cart-title">Giỏ hàng (8)</div>
+        <div class="header-divider"></div>
+
+        <div class="cart-header">
+            <div></div>
+            <div>Sản phẩm</div>
+            <div>Giá</div>
+            <div>Số lượng</div>
+            <div>Tổng</div>
+            <div></div>
+        </div>
+
+        <div class="cart-item">
+            <input type="checkbox">
+            <div style="display: flex; align-items: center;">
+                <img src="assets/images/1.png" alt="Ảnh">
+                <div class="product-info">
+                    <div class="product-title">Burger Bánh Mì</div>
+                    <div class="product-description">1 Burger Bánh Mì + 1 Khoai Chiên + 1 Pepsi</div>
+                </div>
+            </div>
+            <div>77.000đ</div>
+            <div class="quantity-control">
+                <button>-</button>
+                <span>4</span>
+                <button>+</button>
+            </div>
+            <div>308.000đ</div>
+            <div class="remove-btn">×</div>
+        </div>
+
+        <div class="cart-item">
+            <input type="checkbox">
+            <div style="display: flex; align-items: center;">
+                <img src="assets/images/3.png" alt="Ảnh">
+                <div class="product-info">
+                    <div class="product-title">Combo Cơm Gà Viên</div>
+                    <div class="product-description">01 Cơm Gà Viên Nanban + 01 Miếng Gà Rán + 01 Pepsi</div>
+                </div>
+            </div>
+            <div>99.000đ</div>
+            <div class="quantity-control">
+                <button>-</button>
+                <span>2</span>
+                <button>+</button>
+            </div>
+            <div>198.000đ</div>
+            <div class="remove-btn">×</div>
+        </div>
+
+        <div class="cart-item">
+            <input type="checkbox">
+            <div style="display: flex; align-items: center;">
+                <img src="assets/images/5.png" alt="Ảnh">
+                <div class="product-info">
+                    <div class="product-title">Combo Gà Quay</div>
+                    <div class="product-description">1 Đùi Gà Quay Flava + 1 Salad Hạt + 1 Lipton (lớn)</div>
+                </div>
+            </div>
+            <div>117.000đ</div>
+            <div class="quantity-control">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+            <div>117.000đ</div>
+            <div class="remove-btn">×</div>
+        </div>
+
+        <div class="cart-item">
+            <input type="checkbox">
+            <div style="display: flex; align-items: center;">
+                <img src="assets/images/6.png" alt="Ảnh">
+                <div class="product-info">
+                    <div class="product-title">Combo Phi-lê Gà Quay</div>
+                    <div class="product-description">1 Phi-Lê Gà Quay Flava + 1 Salad Hạt + 1 Lipton (lớn)</div>
+                </div>
+            </div>
+            <div>99.000đ</div>
+            <div class="quantity-control">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+            <div>99.000đ</div>
+            <div class="remove-btn">×</div>
+        </div>
+
+        <div class="total">
+            <div>Tổng tiền: 722.000đ</div>
+            <button class="checkout-btn">Đặt món</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="inner-wrap">
+          <img src="/assets/images/logo.jpg" alt="" />
+          <div class="inner-box">
+            <strong class="inner-title">Dream Team</strong>
+            <p class="inner-sub-title">
+              Chuỗi cửa hàng cung cấp các món ăn nhanh lớn nhất Việt Nam
+            </p>
+          </div>
+          <div class="inner-box">
+            <strong class="inner-title">Chính sách</strong>
+            <ul>
+              <li><a href="#">Chính sách và quy định</a></li>
+              <li><a href="#">Chính sách thanh toán</a></li>
+              <li><a href="#">Chính sách hoạt động</a></li>
+            </ul>
+          </div>
+          <div class="inner-box">
+            <strong class="inner-title">Liên hệ</strong>
+            <p class="inner-sub-title">
+              Hotline: 0785904413 <br />
+              <br />
+              Email: dreamteam.k17@gmail.com
+            </p>
+          </div>
+        </div>
+        <div class="footer-bot">Copyright © 2024 Dreamteam</div>
+      </div>
+    </footer>
+    <!-- End Footer -->
+  </body>
+</html>

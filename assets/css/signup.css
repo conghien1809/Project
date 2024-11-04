@@ -1,0 +1,25 @@
+.form-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 50px;
+}
+.form-title {
+    margin-bottom: 30px;
+}
+.form-control {
+    border-radius: 30px;
+}
+.btn-custom {
+    border-radius: 30px;
+    width: 100%;
+}
+.back-btn {
+    border-radius: 30px;
+    width: 200px;
+}
+.error {
+    font-size: 0.9em;
+    color: red;
+}

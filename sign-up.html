@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/signup.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <ul>
+          <li><a class="dang-nhap" href="#">Đăng nhập</a></li>
+          <li><a class="dang-ky" href="#">Đăng ký</a></li>
+        </ul>
+      </div>
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <a href="#">
+            <img src="assets/images/logoct.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="inner-menu">
+          <ul>
+            <li><a href="#">TRANG CHỦ</a></li>
+            <li><a href="#">SẢN PHẨM</a></li>
+            <li><a href="#">DỊCH VỤ</a></li>
+            <li><a href="#">GIỚI THIỆU</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">LIÊN HỆ</a></li>
+          </ul>
+        </div>
+        <div class="inner-cart">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Section-->
+    <section>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="form-container">
+                    <h3 class="text-center form-title"><strong>ĐĂNG KÝ TÀI KHOẢN</strong></h3>
+                    <p class="text-center text-danger">Vui lòng nhập đầy đủ thông tin để đăng ký tài khoản</p>
+                    <hr>
+
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <label><b>Họ và tên:</b></label>
+                            <input type="text" class="form-control" id="txtdn" placeholder="Họ và tên">
+                            <span class="text-danger">*</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label><b>Ngày sinh:</b></label>
+                            <input type="date" class="form-control">
+                            <span class="text-danger">*</span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="txtdn"><b>Tên tài khoản:</b></label>
+                            <input type="text" class="form-control" placeholder="Nhập tên đăng nhập">
+                            <span id="errorDN" class="text-danger">*</span>
+                        </div>
+
+                        
+
+                        <div class="form-group">
+                            <label for="txtsdt"><b>Số điện thoại:</b></label>
+                            <input type="tel" class="form-control" placeholder="Nhập số điện thoại">
+                            <span id="errorsdt" class="text-danger">*</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtmk"><b>Email:</b></label>
+                            <input type="email" class="form-control" placeholder="Nhập email">
+                            <span id="erroremail" class="text-danger">*</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="txtmk"><b>Mật khẩu:</b></label>
+                            <input type="password" class="form-control" placeholder="Nhập mật khẩu">
+                            <span id="errormk" class="text-danger">*</span>
+                        </div>
+
+                        
+
+                        <div class="form-group">
+                            <label for="txtnlmk"><b>Nhập lại mật khẩu:</b></label>
+                            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
+                            <span id="errorlai" class="text-danger">*</span>
+                        </div>
+
+                        
+                    </form>
+                        <div class="text-center"><button type="submit" class="btn btn-primary btn-custom">Đăng ký</button></div>
+                    <div class="text-center mt-3">Bạn đã có tài khoản? <a class="text-danger" href="./danhnhap.html">Đăng nhập tại đây!</a></div>
+                </div>
+                <div class="text-center mt-3 pb-3">
+                    <a href="./trangchu.html"><button type="button" class="btn btn-danger back-btn">Quay lại trang chủ</button></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="inner-wrap">
+            <img src="assets/images/logoct.png" alt="" />
+            <div class="inner-box">
+              <strong class="inner-title">THE DREAM</strong>
+              <p class="inner-sub-title">
+                <i>Chuỗi cửa hàng cung cấp các món ăn nhanh lớn nhất Việt Nam</i>
+              </p>
+              <p> <b>Địa chỉ:</b> 17 Nguyễn Văn Bảo, Quận Gò Vấp, TP.HCM</p>
+            </div>
+            <div class="inner-box">
+              <strong class="inner-title">Chính sách</strong>
+              <ul>
+                <li><a href="#">Chính sách và quy định</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách hoạt động</a></li>
+              </ul>
+            </div>
+            <div class="inner-box">
+              <strong class="inner-title">Liên hệ</strong>
+              <p class="inner-sub-title">
+                Hotline: 0785904413 <br />
+                <br />
+                Email: dreamteam.k17@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="footer-bot">Copyright © 2024 Dreamteam</div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+  </body>
+</html>
