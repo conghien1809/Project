@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Header</title>
+    <title>Thêm nhân viên</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/signup.css">
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
@@ -51,73 +50,54 @@
       </div>
     </header>
     <!-- End Header -->
-
-    <!-- Section-->
     <section>
-        <div class="row justify-content-center">
-            <div class="col-md-8">
-                <div class="form-container">
-                    <h3 class="text-center form-title"><strong>ĐĂNG KÝ TÀI KHOẢN</strong></h3>
-                    <p class="text-center text-danger">Vui lòng nhập đầy đủ thông tin để đăng ký tài khoản</p>
-                    <hr>
-
-                    <form id="registrationForm">
+        <div class="container mt-5">
+            <h2 class="text-center">Thêm Nhân Viên</h2>
+    
+            <!-- Form thêm nhân viên -->
+            <div class="card mb-4">
+                <div class="card-body">
+                    <form id="employeeForm">
                         <div class="form-group">
-                            <label><b>Họ và tên:</b></label>
-                            <input type="text" class="form-control" id="txtdn" placeholder="Họ và tên">
-                            <span class="text-danger">*</span>
-                        </div>
-
-                        <div class="form-group">
-                            <label><b>Ngày sinh:</b></label>
-                            <input type="date" class="form-control">
-                            <span class="text-danger">*</span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="txtdn"><b>Tên tài khoản:</b></label>
-                            <input type="text" class="form-control" placeholder="Nhập tên đăng nhập">
-                            <span id="errorDN" class="text-danger">*</span>
-                        </div>
-
-                        
-
-                        <div class="form-group">
-                            <label for="txtsdt"><b>Số điện thoại:</b></label>
-                            <input type="tel" class="form-control" placeholder="Nhập số điện thoại">
-                            <span id="errorsdt" class="text-danger">*</span>
+                            <label for="employeeName">Tên Nhân Viên</label>
+                            <input type="text" class="form-control" id="employeeName" placeholder="Nhập tên nhân viên" required>
                         </div>
                         <div class="form-group">
-                            <label for="txtmk"><b>Email:</b></label>
-                            <input type="email" class="form-control" placeholder="Nhập email">
-                            <span id="erroremail" class="text-danger">*</span>
+                            <label for="address">Địa Chỉ</label>
+                            <input type="text" class="form-control" id="address" placeholder="Nhập địa chỉ" required>
                         </div>
                         <div class="form-group">
-                            <label for="txtmk"><b>Mật khẩu:</b></label>
-                            <input type="password" class="form-control" placeholder="Nhập mật khẩu">
-                            <span id="errormk" class="text-danger">*</span>
+                            <label for="phone">Số Điện Thoại</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Nhập số điện thoại" required>
                         </div>
-
-                        
-
                         <div class="form-group">
-                            <label for="txtnlmk"><b>Nhập lại mật khẩu:</b></label>
-                            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
-                            <span id="errorlai" class="text-danger">*</span>
+                            <label for="position">Chức Vụ</label>
+                            <select class="form-control" id="position" required>
+                                <option value="">Chọn chức vụ</option>
+                                <option value="Nhân viên bán hàng">Nhân viên bán hàng</option>
+                                <option value="Nhân viên bếp">Nhân viên bếp</option>
+                                <option value="Nhân viên quản lý">Nhân viên quản lý</option>
+                            </select>
                         </div>
-
-                        
+                        <button type="submit" class="btn btn-primary">Lưu</button>
+                        <a href="employee-details.html" class="btn btn-secondary">Quay Lại</a>
                     </form>
-                        <div class="text-center"><button type="submit" class="btn btn-primary btn-custom">Đăng ký</button></div>
-                    <div class="text-center mt-3">Bạn đã có tài khoản? <a class="text-danger" href="./danhnhap.html">Đăng nhập tại đây!</a></div>
-                </div>
-                <div class="text-center mt-3 pb-3">
-                    <a href="./trangchu.html"><button type="button" class="btn btn-danger back-btn">Quay lại trang chủ</button></a>
                 </div>
             </div>
         </div>
+        <script>
+            $(document).ready(function () {
+                // Xử lý form thêm nhân viên
+                $('#employeeForm').on('submit', function (e) {
+                    e.preventDefault();
+                    // Xử lý lưu nhân viên (có thể lưu vào server hoặc localStorage)
+                    alert('Nhân viên đã được thêm thành công!');       
+                    // Quay lại trang quản lý nhân viên
+                    window.location.href = "employee-details.html";
+                });
+            });
+        </script>
     </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -151,5 +131,5 @@
         </div>
       </footer>
       <!-- End Footer -->
-  </body>
+</body>
 </html>

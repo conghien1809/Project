@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý nhân viên</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <ul>
+          <li><a class="dang-nhap" href="./sign-in.html">Đăng nhập</a></li>
+          <li><a class="dang-ky" href="./sign-up.html">Đăng ký</a></li>
+        </ul>
+      </div>
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <a href="#">
+            <img src="assets/images/logoct.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="inner-menu">
+          <ul>
+            <li><a href="./home-page.html">TRANG CHỦ</a></li>
+            <li><a href="#">SẢN PHẨM</a></li>
+            <li><a href="./party-booking.html">DỊCH VỤ</a></li>
+            <li><a href="./intro.html">GIỚI THIỆU</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./restaurant.html">NHÀ HÀNG</a></li>
+          </ul>
+        </div>
+        <div class="inner-cart">
+          <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <section>
+        <div class="container mt-5">
+            <h2 class="text-center">Quản Lý Nhân Viên</h2>
+            
+            <!-- Nút thêm nhân viên -->
+            <a href="./add-emp.html" class="btn btn-success mb-3">Thêm Nhân Viên</a>
+    
+            <!-- Bảng danh sách nhân viên -->
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Mã Nhân Viên</th>
+                        <th>Tên Nhân Viên</th>
+                        <th>Địa Chỉ</th>
+                        <th>Số Điện Thoại</th>
+                        <th>Chức Vụ</th>
+                        <th>Thao Tác</th>
+                    </tr>
+                </thead>
+                <tbody id="employeeTable">
+                    <!-- Dữ liệu nhân viên sẽ được thêm vào đây -->
+                    <tr>
+                        <td>1</td>
+                        <td>Nguyễn Văn A</td>
+                        <td>123 Đường A, Quận 1</td>
+                        <td>0123456789</td>
+                        <td>Quản lý</td>
+                        <td>
+                            <a href="update-emp.html?id=1" class="btn btn-warning btn-sm">Sửa</a>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(1)">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Trần Thị B</td>
+                        <td>456 Đường B, Quận 2</td>
+                        <td>0987654321</td>
+                        <td>Nhân viên bán hàng</td>
+                        <td>
+                            <a href="update-emp.html?id=2" class="btn btn-warning btn-sm">Sửa</a>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(2)">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Lê Văn C</td>
+                        <td>789 Đường C, Quận 3</td>
+                        <td>0123456780</td>
+                        <td>Nhân viên bếp</td>
+                        <td>
+                            <a href="update-emp.html?id=3" class="btn btn-warning btn-sm">Sửa</a>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(3)">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Nguyễn Thị D</td>
+                        <td>321 Đường D, Quận 4</td>
+                        <td>0987654322</td>
+                        <td>Nhân viên bán hàng</td>
+                        <td>
+                            <a href="update-emp.html?id=4" class="btn btn-warning btn-sm">Sửa</a>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(4)">Xóa</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Trần Văn E</td>
+                        <td>654 Đường E, Quận 5</td>
+                        <td>0123456781</td>
+                        <td>Nhân viên quản lý</td>
+                        <td>
+                            <a href="update-emp.html?id=5" class="btn btn-warning btn-sm">Sửa</a>
+                            <button class="btn btn-danger btn-sm" onclick="deleteEmployee(5)">Xóa</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    
+        <script>
+            // Hàm xóa nhân viên
+            function deleteEmployee(employeeId) {
+                if (confirm('Bạn có chắc chắn muốn xóa nhân viên này không?')) {
+                    // Xử lý xóa nhân viên (có thể thực hiện xóa trên server hoặc localStorage)
+                    alert('Nhân viên đã được xóa thành công!');
+                    // Ở đây có thể cập nhật lại bảng để loại bỏ nhân viên đã xóa
+                }
+            }
+        </script>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="inner-wrap">
+            <img src="assets/images/logoct.png" alt="" />
+            <div class="inner-box">
+              <strong class="inner-title">THE DREAM</strong>
+              <p class="inner-sub-title">
+                <i>Chuỗi cửa hàng cung cấp các món ăn nhanh lớn nhất Việt Nam</i>
+              </p>
+              <p> <b>Địa chỉ:</b> 17 Nguyễn Văn Bảo, Quận Gò Vấp, TP.HCM</p>
+            </div>
+            <div class="inner-box">
+              <strong class="inner-title">Chính sách</strong>
+              <ul>
+                <li><a href="#">Chính sách và quy định</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách hoạt động</a></li>
+              </ul>
+            </div>
+            <div class="inner-box">
+              <strong class="inner-title">Liên hệ</strong>
+              <p class="inner-sub-title">
+                Hotline: 0785904413 <br />
+                <br />
+                Email: dreamteam.k17@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="footer-bot">Copyright © 2024 Dreamteam</div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+</body>
+</html>

@@ -55,64 +55,24 @@
     <!-- Section-->
     <section>
         <div class="row justify-content-center">
-            <div class="col-md-8">
+            <div class="col-md-7 pb-5">
                 <div class="form-container">
-                    <h3 class="text-center form-title"><strong>ĐĂNG KÝ TÀI KHOẢN</strong></h3>
-                    <p class="text-center text-danger">Vui lòng nhập đầy đủ thông tin để đăng ký tài khoản</p>
-                    <hr>
-
-                    <form id="registrationForm">
+                    <h3 class="text-center form-title"><strong>ĐĂNG NHẬP</strong></h3>
+                    <form id="loginForm">
                         <div class="form-group">
-                            <label><b>Họ và tên:</b></label>
-                            <input type="text" class="form-control" id="txtdn" placeholder="Họ và tên">
-                            <span class="text-danger">*</span>
-                        </div>
-
-                        <div class="form-group">
-                            <label><b>Ngày sinh:</b></label>
-                            <input type="date" class="form-control">
-                            <span class="text-danger">*</span>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="txtdn"><b>Tên tài khoản:</b></label>
-                            <input type="text" class="form-control" placeholder="Nhập tên đăng nhập">
-                            <span id="errorDN" class="text-danger">*</span>
-                        </div>
-
-                        
-
-                        <div class="form-group">
-                            <label for="txtsdt"><b>Số điện thoại:</b></label>
-                            <input type="tel" class="form-control" placeholder="Nhập số điện thoại">
-                            <span id="errorsdt" class="text-danger">*</span>
+                            <label for="tendn"><b>Tên đăng nhập</b></label>
+                            <input type="text" class="form-control" id="tendn" name="tendn" placeholder="Nhập tên đăng nhập">
+                            <span class="text-danger" id="errortk"></span>
                         </div>
                         <div class="form-group">
-                            <label for="txtmk"><b>Email:</b></label>
-                            <input type="email" class="form-control" placeholder="Nhập email">
-                            <span id="erroremail" class="text-danger">*</span>
+                            <label for="matkhau"><b>Mật khẩu</b></label>
+                            <input type="password" class="form-control" id="matkhau" name="matkhau" placeholder="Nhập mật khẩu">
+                            <span class="text-danger" id="errormk"></span>
                         </div>
-                        <div class="form-group">
-                            <label for="txtmk"><b>Mật khẩu:</b></label>
-                            <input type="password" class="form-control" placeholder="Nhập mật khẩu">
-                            <span id="errormk" class="text-danger">*</span>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary btn-custom mt-3">Đăng nhập</button>
                         </div>
-
-                        
-
-                        <div class="form-group">
-                            <label for="txtnlmk"><b>Nhập lại mật khẩu:</b></label>
-                            <input type="password" class="form-control" placeholder="Nhập lại mật khẩu">
-                            <span id="errorlai" class="text-danger">*</span>
-                        </div>
-
-                        
                     </form>
-                        <div class="text-center"><button type="submit" class="btn btn-primary btn-custom">Đăng ký</button></div>
-                    <div class="text-center mt-3">Bạn đã có tài khoản? <a class="text-danger" href="./danhnhap.html">Đăng nhập tại đây!</a></div>
-                </div>
-                <div class="text-center mt-3 pb-3">
-                    <a href="./trangchu.html"><button type="button" class="btn btn-danger back-btn">Quay lại trang chủ</button></a>
                 </div>
             </div>
         </div>
