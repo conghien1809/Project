@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0px;
-    color: var(--color-text-one);
     font-family: var(--font);
 }
 
@@ -16,13 +15,6 @@ a {
 }
 
 :root {
-    --color-one: #f2a4a1;
-    --color-two: #f2dac7;
-    --color-text-one: #232323;
-    --color-text-two: #777777;
-    --color-bg-one: #efefef;
-    --color-bg-two: #dee8eb;
-
     --font: "DM Sans", sans-serif;
 }
 
