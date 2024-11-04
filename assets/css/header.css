@@ -86,3 +86,9 @@
 }
 
 /* End Header */
+a:hover{
+    text-decoration: none;
+}
+a{
+    color: black;
+}
