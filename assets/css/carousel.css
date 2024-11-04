@@ -110,3 +110,10 @@
 .carousel-indicators li.active {	
     background: rgba(0, 0, 0, 0.6);
 }
+
+a:hover{
+    text-decoration: none;
+}
+a{
+    color: black;
+}
