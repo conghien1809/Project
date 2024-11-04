@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thêm nhân viên</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+        .card-img-top{
+            width: 100%;
+            height: 200px;
+        }
+        .card{
+            text-align: center;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <ul>
+          <li><a class="dang-nhap" href="./sign-in.html">Đăng nhập</a></li>
+          <li><a class="dang-ky" href="./sign-up.html">Đăng ký</a></li>
+        </ul>
+      </div>
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <a href="#">
+            <img src="assets/images/logoct.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="inner-menu">
+          <ul>
+            <li><a href="./home-page.html">TRANG CHỦ</a></li>
+            <li><a href="#">SẢN PHẨM</a></li>
+            <li><a href="./party-booking.html">DỊCH VỤ</a></li>
+            <li><a href="./intro.html">GIỚI THIỆU</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./restaurant.html">NHÀ HÀNG</a></li>
+          </ul>
+        </div>
+        <div class="inner-cart">
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+<section class="container my-5">
+    <div class="row">
+        <!-- Ảnh và thông tin sản phẩm chính -->
+        <div class="col-md-6">
+            <img src="./assets/images/hamburger.jfif" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+            <h2 class="product-name"><strong>HAMBURGER THẬP CẨM</strong></h2>
+            <p class="product-category"><b>Loại sản phẩm:</b> Thức ăn nhanh</p>
+            <p class="product-price"><b>Giá:</b> 39,900 VND</p>
+            <p class="product-description">
+                <b>Mô tả:</b> Đây là một sản phẩm đặc biệt của *The Dream*, được chế biến từ nguyên liệu tự nhiên, đem đến hương vị đậm đà và trải nghiệm tuyệt vời cho người thưởng thức.
+            </p>
+
+            <div class="product-action">
+                <label for="quantity"><b>Số lượng:</b></label>
+                <input type="number" id="quantity" name="quantity" min="1" value="1" class="form-control w-25 d-inline-block ml-2" />
+                <div class="pt-2">
+                    <button class="btn btn-primary mt-3 ml-2" id="add-to-cart-btn">
+                    <i class="fa fa-shopping-cart text-white"></i> Thêm vào giỏ hàng
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Phần Sản phẩm liên quan -->
+    <div class="related-products mt-5">
+        <h3 class="text-center mb-4"><strong>MÓN ĂN LIÊN QUAN</strong></h3>
+        <div class="row">
+            <!-- Sản phẩm 1 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assets/images/pizza.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Pizza Thập Cẩm</b></h5>
+                        <p class="card-text">Giá: 89,000 VND</p>
+                        <button class="btn btn-primary btn-sm">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assets/images/banhmi.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Bánh Mì Thập Cẩm</b></h5>
+                        <p class="card-text">Giá: 29,900 VND</p>
+                        <button class="btn btn-primary btn-sm">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assets/images/chaoyenmach.jpg" class="card-img-top">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Cháo Yến Mạch</b></h5>
+                        <p class="card-text">Giá: 35,000 VND</p>
+                        <button class="btn btn-primary btn-sm">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sản phẩm 4 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="assets/images/blog3.jpg" class="card-img-top" alt="Sản phẩm liên quan 4">
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Xôi thập cẩm</b></h5>
+                        <p class="card-text">Giá: 69,000 VND</p>
+                        <button class="btn btn-primary btn-sm">Mua ngay</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="inner-wrap">
+            <img src="assets/images/logoct.png" alt="" />
+            <div class="inner-box">
+              <strong class="inner-title">THE DREAM</strong>
+              <p class="inner-sub-title">
+                <i>Chuỗi cửa hàng cung cấp các món ăn nhanh lớn nhất Việt Nam</i>
+              </p>
+              <p> <b>Địa chỉ:</b> 17 Nguyễn Văn Bảo, Quận Gò Vấp, TP.HCM</p>
+            </div>
+            <div class="inner-box">
+              <strong class="inner-title">Chính sách</strong>
+              <ul>
+                <li><a href="#">Chính sách và quy định</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách hoạt động</a></li>
+              </ul>
+            </div>
+            <div class="inner-box">
+              <strong class="inner-title">Liên hệ</strong>
+              <p class="inner-sub-title">
+                Hotline: 0785904413 <br />
+                <br />
+                Email: dreamteam.k17@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="footer-bot">Copyright © 2024 Dreamteam</div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+</body>
+</html>
