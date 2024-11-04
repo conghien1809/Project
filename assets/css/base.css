@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    color: var(--color-text-one);
+    font-family: var(--font);
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --color-one: #f2a4a1;
+    --color-two: #f2dac7;
+    --color-text-one: #232323;
+    --color-text-two: #777777;
+    --color-bg-one: #efefef;
+    --color-bg-two: #dee8eb;
+
+    --font: "DM Sans", sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
