@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Đăng nhập</title>
+    <title>Quản lý nguyên liệu</title>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/header.css">
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/base.css">
-    <link rel="stylesheet" href="assets/css/signup.css">
-    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="./assets/js/material.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link
       rel="stylesheet"
@@ -51,33 +51,54 @@
       </div>
     </header>
     <!-- End Header -->
-
-    <!-- Section-->
     <section>
-        <div class="row justify-content-center">
-            <div class="col-md-7 pb-5">
-                <div class="form-container">
-                    <h3 class="text-center form-title"><strong>ĐĂNG NHẬP</strong></h3>
-                    <form id="loginForm">
+        <div class="container mt-5">
+            <div class="card shadow">
+                <div class="card-body">
+                    <h2 class="text-center mb-4"><strong>Đặt Nguyên Liệu</strong></h2>
+                    <form>
+                        <!-- Tên Nguyên Liệu -->
                         <div class="form-group">
-                            <label for="tendn"><b>Tên đăng nhập</b></label>
-                            <input type="text" class="form-control" id="tendn" name="tendn" placeholder="Nhập tên đăng nhập">
-                            <span class="text-danger" id="errortk"></span>
+                            <label for="materialName">Tên Nguyên Liệu:</label>
+                            <select id="materialName" name="materialName" class="form-control" onchange="updatePrice()">
+                                <option value="Bột mì">Bột mì</option>
+                                <option value="Thịt bò">Thịt bò</option>
+                                <option value="Phô mai">Phô mai</option>
+                                <option value="Rau xà lách">Rau xà lách</option>
+                            </select>
                         </div>
+                        
+                        <!-- Số Lượng -->
                         <div class="form-group">
-                            <label for="matkhau"><b>Mật khẩu</b></label>
-                            <input type="password" class="form-control" id="matkhau" name="matkhau" placeholder="Nhập mật khẩu">
-                            <span class="text-danger" id="errormk"></span>
+                            <label for="quantity">Số Lượng (kg):</label>
+                            <input type="number" id="quantity" name="quantity" class="form-control" min="1" required oninput="calculateTotal()">
                         </div>
-                        <div class="text-center">
-                            <button type="button" class="btn btn-primary btn-custom mt-3">Đăng nhập</button>
+    
+                        <!-- Đơn Giá -->
+                        <div class="form-group">
+                            <label for="price">Đơn Giá (VNĐ/kg):</label>
+                            <input type="text" id="price" name="price" class="form-control" readonly>
                         </div>
+    
+                        <!-- Tổng Tiền -->
+                        <div class="form-group">
+                            <label for="total">Tổng Tiền (VNĐ):</label>
+                            <input type="text" id="total" name="total" class="form-control" readonly>
+                        </div>
+    
+                        <!-- Ghi Chú -->
+                        <div class="form-group">
+                            <label for="notes">Ghi Chú:</label>
+                            <textarea id="notes" name="notes" class="form-control" rows="3" placeholder="Thêm ghi chú hoặc yêu cầu đặc biệt..."></textarea>
+                        </div>
+                        
+                        <!-- Nút Đặt Nguyên Liệu -->
+                        <button type="submit" class="btn btn-primary btn-block font-weight-bold">Đặt Nguyên Liệu</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -111,5 +132,5 @@
         </div>
       </footer>
       <!-- End Footer -->
-  </body>
+</body>
 </html>
