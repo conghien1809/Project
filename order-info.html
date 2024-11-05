@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý đơn hàng</title>
+    <link rel="stylesheet" href="./assets/css/order-info.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <ul>
+          <li><a class="dang-nhap" href="./sign-in.html">Đăng nhập</a></li>
+          <li><a class="dang-ky" href="./sign-up.html">Đăng ký</a></li>
+        </ul>
+      </div>
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <a href="#">
+            <img src="assets/images/logoct.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="inner-menu">
+          <ul>
+            <li><a href="./home-page.html">TRANG CHỦ</a></li>
+            <li><a href="./products.html">SẢN PHẨM</a></li>
+            <li><a href="./party-booking.html">DỊCH VỤ</a></li>
+            <li><a href="./intro.html">GIỚI THIỆU</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./restaurant.html">NHÀ HÀNG</a></li>
+          </ul>
+        </div>
+        <div class="inner-cart">
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <div class="container">
+        <h1 class="heading">Thông tin đơn hàng nguyên vật liệu</h1>
+        
+        <div class="form-group form-row">
+            <label>Mã đơn</label>
+            <input type="text" value="DH001" readonly>
+        </div>
+
+        <div class="form-group form-row">
+            <label>Ngày đặt hàng</label>
+            <input type="text" value="01/11/2024" readonly>
+        </div>
+
+        <div class="form-group form-row">
+            <label>Trạng thái</label>
+            <input type="text" value="Đang giao" readonly>
+        </div>
+
+        <div class="form-group form-row">
+            <label>Ngày hoàn thành</label>
+            <input type="text" readonly>
+        </div>
+
+        <div class="table-container">
+            <div class="table-header">
+                Danh sách nguyên vật liệu
+            </div>
+            <div class="table-scroll">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 70%">Mã NVL</th>
+                            <th style="width: 30%">Số lượng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>NVL001</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>NVL001</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>NVL001</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>NVL001</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>NVL001</td>
+                            <td>50</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <button type="button" class="close-button">Đóng</button>
+    </div>
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="inner-wrap">
+        <img src="assets/images/logoct.png" alt="" />
+        <div class="inner-box">
+          <strong class="inner-title">THE DREAM</strong>
+          <p class="inner-sub-title">
+            <i>Chuỗi cửa hàng cung cấp các món ăn nhanh lớn nhất Việt Nam</i>
+          </p>
+          <p> <b>Địa chỉ:</b> 17 Nguyễn Văn Bảo, Quận Gò Vấp, TP.HCM</p>
+        </div>
+        <div class="inner-box">
+          <strong class="inner-title">Chính sách</strong>
+          <ul>
+            <li><a href="#">Chính sách và quy định</a></li>
+            <li><a href="#">Chính sách thanh toán</a></li>
+            <li><a href="#">Chính sách hoạt động</a></li>
+          </ul>
+        </div>
+        <div class="inner-box">
+          <strong class="inner-title">Liên hệ</strong>
+          <p class="inner-sub-title">
+            Hotline: 0785904413 <br />
+            <br />
+            Email: dreamteam.k17@gmail.com
+          </p>
+        </div>
+      </div>
+      <div class="footer-bot">Copyright © 2024 Dreamteam</div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+</body>
+</html>

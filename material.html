@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="assets/css/footer.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/base.css">
+    <link rel="stylesheet" href="assets/css/ingredient-management.css">
     <script src="assets/js/jquery-3.7.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link
@@ -50,90 +51,98 @@
       </div>
     </header>
     <!-- End Header -->
-    <section class="container my-3">
-        <!-- Phần danh sách nguyên liệu hiện tại -->
-        <div class="btn btn-primary float-right m-3"><a class="text-white" href="order-material.html">Đặt Nguyên Liệu</a></div>
-        <div class="current-ingredients">
-            <table class="table table-bordered">
-                <thead class="thead-dark">
-                    <tr>
-                        <th>Tên nguyên liệu</th>
-                        <th>Loại</th>
-                        <th>Số lượng hiện tại</th>
-                        <th>Đơn vị</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Bột mì</td>
-                        <td>Thực phẩm khô</td>
-                        <td>50</td>
-                        <td>kg</td>
-                    </tr>
-                    <tr>
-                        <td>Thịt bò</td>
-                        <td>Thực phẩm tươi</td>
-                        <td>20</td>
-                        <td>kg</td>
-                    </tr>
-                    <tr>
-                        <td>Phô mai</td>
-                        <td>Sản phẩm từ sữa</td>
-                        <td>10</td>
-                        <td>kg</td>
-                    </tr>
-                    <tr>
-                        <td>Rau xà lách</td>
-                        <td>Rau củ</td>
-                        <td>15</td>
-                        <td>kg</td>
-                    </tr>
-                    <tr>
-                        <td>Khoai tây</td>
-                        <td>Rau củ</td>
-                        <td>25</td>
-                        <td>kg</td>
-                    </tr>
-                    <tr>
-                        <td>Thịt gà</td>
-                        <td>Thực phẩm tươi</td>
-                        <td>30</td>
-                        <td>kg</td>
-                    </tr>
-                    <tr>
-                        <td>Trứng gà</td>
-                        <td>Thực phẩm tươi</td>
-                        <td>200</td>
-                        <td>quả</td>
-                    </tr>
-                    <tr>
-                        <td>Dầu ăn</td>
-                        <td>Gia vị</td>
-                        <td>50</td>
-                        <td>lít</td>
-                    </tr>
-                    <tr>
-                        <td>Cà chua</td>
-                        <td>Rau củ</td>
-                        <td>20</td>
-                        <td>kg</td>
-                    </tr>
-                    <tr>
-                        <td>Đường</td>
-                        <td>Gia vị</td>
-                        <td>15</td>
-                        <td>kg</td>
-                    </tr>
-                    <tr>
-                        <td>Muối</td>
-                        <td>Gia vị</td>
-                        <td>10</td>
-                        <td>kg</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <main>
+      <header class="menu-header">
+          <div class="menu-container">
+              <h1 class="menu-title">Quản lý nguyên vật liệu</h1>
+              <div class="menu-content">
+                  <nav class="menu-nav">
+                      <button class="menu-button"><a href="./inventory-management.html">Danh sách tồn kho</a></button>
+                      <button class="menu-button active">Danh sách nguyên vật liệu</button>
+                      <button class="menu-button"><a href="./order-management.html">Danh sách đơn đặt hàng</a></button>
+                  </nav>
+                  <div class="button-group">
+                    <button class="action-button"><a style="color: white;" href="./ingredient-form.html">Thêm nguyên vật liệu</a></button>
+                    <button class="action-button"><a style="color: white;" href="./order-material.html">Đặt hàng nguyên liệu</a></button>
+                </div>
+              </div>
+          </div>
+      </header>
+          <input type="text" class="search-bar" placeholder="Tìm nguyên vật liệu...">
+  
+          <div class="table-container">
+              <table>
+                  <tr>
+                      <th>Ảnh</th>
+                      <th>Mã NVL</th>
+                      <th>Tên NVL</th>
+                      <th>Tồn kho</th>
+                      <th>Ảnh</th>
+                  </tr>
+              </table>
+              <div class="table-scroll">
+                  <table>
+                      <tbody>
+                          <tr>
+                              <td>NVL001</td>
+                              <td>CH01</td>
+                              <td>MON001</td>
+                              <td>Gà rán</td>
+                              <td>cái</td>
+                              <td class="price">50,000</td>
+                              <td>
+                                  <img src="./assets/images/Combo Trưa - Cơm Gà Rán.jpg" alt="Gà rán" class="item-image">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>NVL002</td>
+                              <td>CH02</td>
+                              <td>MON002</td>
+                              <td>Hamburger</td>
+                              <td>cái</td>
+                              <td class="price">45,000</td>
+                              <td>
+                                  <img src="./assets/images/hamburger.jfif" alt="Hamburger" class="item-image">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>NVL003</td>
+                              <td>CH01</td>
+                              <td>MON003</td>
+                              <td>Pizza</td>
+                              <td>cái</td>
+                              <td class="price">120,000</td>
+                              <td>
+                                  <img src="./assets/images/pizza.jpg" alt="Pizza" class="item-image">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>NVL004</td>
+                              <td>CH03</td>
+                              <td>MON001, MON03</td>
+                              <td>Khoai tây chiên</td>
+                              <td>phần</td>
+                              <td class="price">25,000</td>
+                              <td>
+                                  <img src="./assets/images/Khoai Tây Chiên (Vừa).jpg" alt="Khoai tây chiên" class="item-image">
+                              </td>
+                          </tr>
+                          <tr>
+                              <td>NVL005</td>
+                              <td>CH02</td>
+                              <td>MON002</td>
+                              <td>Pepsi</td>
+                              <td>lon</td>
+                              <td class="price">15,000</td>
+                              <td>
+                                  <img src="./assets/images/Pepsi Không Calo Lon.jpg" alt="Coca Cola" class="item-image">
+                              </td>
+                          </tr>
+                      </tbody>
+                  </table>
+              </div>
+          </div>
+      </main>
     <!-- Footer -->
     <footer class="footer">
         <div class="container">

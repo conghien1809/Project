@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý nguyên liệu</title>
+    <link rel="stylesheet" href="./assets/css/ingredient-form.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/base.css">
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header-top">
+        <ul>
+          <li><a class="dang-nhap" href="./sign-in.html">Đăng nhập</a></li>
+          <li><a class="dang-ky" href="./sign-up.html">Đăng ký</a></li>
+        </ul>
+      </div>
+      <div class="inner-wrap">
+        <div class="inner-logo">
+          <a href="#">
+            <img src="assets/images/logoct.png" alt="Logo" />
+          </a>
+        </div>
+        <div class="inner-menu">
+          <ul>
+            <li><a href="./home-page.html">TRANG CHỦ</a></li>
+            <li><a href="./products.html">SẢN PHẨM</a></li>
+            <li><a href="./party-booking.html">DỊCH VỤ</a></li>
+            <li><a href="./intro.html">GIỚI THIỆU</a></li>
+            <li><a href="./blog.html">BLOG</a></li>
+            <li><a href="./restaurant.html">NHÀ HÀNG</a></li>
+          </ul>
+        </div>
+        <div class="inner-cart">
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+      </div>
+    </header>
+    <!-- End Header -->
+    <div class="form-all">
+        <h1 class="heading">Thêm nguyên vật liệu</h1>
+        
+        <form>
+            <div class="form-group">
+                <label>Mã nguyên vật liệu</label>
+                <input type="text" placeholder="Nhập mã nguyên vật liệu">
+            </div>
+
+            <div class="form-group">
+                <label>Mã cửa hàng</label>
+                <select>
+                    <option value="">Chọn mã cửa hàng</option>
+                    <option value="CH01">CH01</option>
+                    <option value="CH02">CH02</option>
+                    <option value="CH03">CH03</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Mã món</label>
+                <select>
+                    <option value="">Chọn mã món</option>
+                    <option value="MON01">MON01</option>
+                    <option value="MON02">MON02</option>
+                    <option value="MON03">MON03</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Tên nguyên vật liệu</label>
+                <input type="text" placeholder="Nhập tên nguyên vật liệu">
+            </div>
+
+            <div class="form-group two-columns">
+                <div>
+                    <label>Đơn vị tính</label>
+                    <input type="text" placeholder="ví dụ: kg, lít, gram">
+                </div>
+                <div>
+                    <label>Hình ảnh</label>
+                    <div class="image-upload">
+                        <input type="image">
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" class="submit-button">Thêm</button>
+        </form>
+    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+          <div class="inner-wrap">
+            <img src="assets/images/logoct.png" alt="" />
+            <div class="inner-box">
+              <strong class="inner-title">THE DREAM</strong>
+              <p class="inner-sub-title">
+                <i>Chuỗi cửa hàng cung cấp các món ăn nhanh lớn nhất Việt Nam</i>
+              </p>
+              <p> <b>Địa chỉ:</b> 17 Nguyễn Văn Bảo, Quận Gò Vấp, TP.HCM</p>
+            </div>
+            <div class="inner-box">
+              <strong class="inner-title">Chính sách</strong>
+              <ul>
+                <li><a href="#">Chính sách và quy định</a></li>
+                <li><a href="#">Chính sách thanh toán</a></li>
+                <li><a href="#">Chính sách hoạt động</a></li>
+              </ul>
+            </div>
+            <div class="inner-box">
+              <strong class="inner-title">Liên hệ</strong>
+              <p class="inner-sub-title">
+                Hotline: 0785904413 <br />
+                <br />
+                Email: dreamteam.k17@gmail.com
+              </p>
+            </div>
+          </div>
+          <div class="footer-bot">Copyright © 2024 Dreamteam</div>
+        </div>
+      </footer>
+      <!-- End Footer -->
+</body>
+</html>
